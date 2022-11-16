@@ -109,5 +109,42 @@
 window.addEventListener('DOMContentLoaded', main);
 
 function main() {
-    
+    loadHtmlElements();
+    loadStartScene();
 }
+
+function loadHtmlElements() {
+    informationText = document.getElementById('informationtext');
+    button1 = document.getElementById('answer-1');
+    button2 = document.getElementById('answer-2');
+  }
+  
+  function loadStartScene() {
+    informationtext.textContent = "Välkommen till ett snöigt äventyr! Vill du påbörja äventyret?";
+    
+    button1.textContent = "ja";
+    button1.addEventListener('click', loadChooseSnowboardOrSkisScene);
+    
+    button2.textContent = "nej";
+    button2.addEventListener('click', loadSkiNotWaxedScene);
+  }
+  
+  function loadChooseSnowboardOrSkisScene() {
+    informationText.textContent = "Nu ska du får välja snowboard eller skidor"
+    
+    button1.textContent = "Snowboard";
+    button1.addEventListener('click', );
+    
+    button2.textContent = "Skidor";
+    button2.addEventListener('click', );
+  }
+
+  function loadSkiNotWaxedScene() {
+    informationtext.textContent = "Fan skidorna är inte vallade ännu, du får ta snowboard istället. Vill du åka upp i liften?";
+    
+    button1.textContent = "ja";
+    button1.addEventListener('click',);
+    
+    button2.textContent = "nej";
+    button2.addEventListener('click',);
+  }
