@@ -56,7 +56,7 @@ function LoadOnWayToLiftScene() {
   button1.onclick = loadGoUpTheLiftScene;
   
   button2.style.display = "block";
-  button2.textContent = "Spaden";
+  button2.textContent = "Spaden"; /*Om man tar spaden ska man inte kunna välja "använd repet". Gör funktion för detta!*/
   button2.onclick = loadGoUpTheLiftScene;
 }
 
@@ -83,7 +83,7 @@ function LoadLiftStartsMoveForward() {
   informationtext.textContent = "*Liften börjar rulla igen. Väl uppe kliver du av liften och ska precis bege dig neråt när ett UFO plötsligt dyker upp!! UFOT skjuter ut en ljusstråla och börjar suga upp människor. Stråler fortsätter mot dig.* Vad gör du?"
 
   button1.textContent = "Börjar åka utför";
-  button1.onclick = loadLiemannenScene;
+  button1.onclick = loadSnowMonsterScene;
   
   button2.textContent = "Står helt lamslagen";
   button2.onclick = LoadInsideSpaceShipScene;
@@ -101,7 +101,7 @@ function loadSnowMonsterScene() {
 }
 
 function LoadInsideSpaceShipScene() {
-  informationtext.textContent = '*Du blir uppsugen i UGO:t. Där uppe befinner sig varleser som ser exakt ut som oss förutom att deras huvuden är "alien"-formade. Dom har också snowboards och genstikulerar och visar med kroppsspåk "Hur för man??" Aliensen parkerar UFO:t och alla kliver ut och börjar åka tillsammans nerför. Helt plötsligt utbryter en lavin och en alien fastnar under snön*'
+  informationtext.textContent = '*Du blir uppsugen i UGO:t. Där uppe befinner sig varleser som ser exakt ut som oss förutom att deras huvuden är "alien"-formade. Dom har också snowboards och gestikulerar och visar med kroppsspåk "Hur för man??" Aliensen parkerar UFO:t och alla kliver ut och börjar åka tillsammans nerför. Helt plötsligt utbryter en lavin och en alien fastnar under snön*'
 
   button1.textContent = "Använd spaden";
   button1.onclick = LoadGoToAfterskiScene;
@@ -130,7 +130,7 @@ function loadSistaÅkText() {
 }
 
 function loadAlienDeadScene() {
-  informationtext.textContent = "*Alien dör. De andra aliensen blir förtvivlade och förbannade och skjuter ihjäl alla med alienpistol* Lose"
+  informationtext.textContent = "*Alien dör. De andra aliensen blir förtvivlade och förbannade och skjuter ihjäl alla med alienpistol*"
 
   button1.style.display = "block";
   
