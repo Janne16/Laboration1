@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    font: 500;
+    color: white;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+p, button {
+    position: absolute;
+}
+
+p {
+    margin-top: 10rem;
+}
+
+#answer-2 {
+    margin-left: 20rem;
+}
