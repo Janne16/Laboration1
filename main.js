@@ -71,35 +71,10 @@ function loadGoUpTheLiftScene() {
 function load10OclockScene() {
   informationtext.textContent = "*Du tänker för dig själv vilken tur att jag tog med mig repet och inte spaden och åker nerför berget.*"
 
-  button1.textContent = "Cork";
+  button1.textContent = "Fortsätt";
   button1.onclick = loadGoDownMountainScene;
   
   button2.style.display = "none";
-}
-
-
-function loadYouDiedScene() {
-  informationtext.textContent = "Du dog. The End"
-
-  button1.style.display = "none";
-
-  button2.style.display = "none";
-
-  // button1.textContent = "Hoppar ur liften";
-  // button1.onclick = loadYouDiedScene;
-  
-  // button2.textContent = "Sitter kvar";
-  // button2.onclick = LoadLiftStartingToMoveBackwards;
-}
-
-function LoadLiftStartingToMoveBackwards() {
-  informationtext.textContent = "Liften börjar sakta rulla baklänges. Vad gör du?"
-
-  button1.textContent = "Hoppar ur liften";
-  button1.onclick = loadYouDiedScene;
-  
-  button2.textContent = "Sitter kvar";
-  button2.onclick = LoadLiftStopsAndStartsMoveForward;
 }
 
 function LoadLiftStopsAndStartsMoveForward() {
@@ -113,6 +88,8 @@ function LoadLiftStopsAndStartsMoveForward() {
 }
 
 function loadGoDownMountainScene() {
+  informationtext.textContent = "*påväge"
+
   button1.textContent = "Cork";
   button1.onclick = LoadGoToAfterskiScene;
   
