@@ -69,6 +69,10 @@ button:hover {
     .div {
         margin: 1rem;
     }
+
+    * {
+        font-size: 1.1rem;
+    }
 }
 
 @media screen and (max-width: 470px) {
@@ -81,14 +85,14 @@ button:hover {
     }
     
     * {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }    
 }
 
 @media screen and (max-width: 340px) {
     button {
         height: 4rem;
-        width: rem;
+        width: 6rem;
     }
     .buttons {
         gap: 1rem;
