@@ -32,7 +32,7 @@ function showYouSureInformation() {
 
 /** Loads ChooseSnowboardOrSkisScene*/
 function loadChooseSnowboardOrSkisScene() {
-  informationText.textContent = "Du och ett gäng vänner är i Bad Gastein och ska åka utför. Nu ska du får välja snowboard eller skidor";
+  informationText.textContent = "Du och ett gäng vänner är i Bad Gastein och ska åka utför. Nu ska du får välja snowboard eller skidor.";
   
   button1.textContent = "Snowboard";
   button1.onclick = loadGoUpTheLiftScene;
@@ -54,7 +54,7 @@ function loadSkiNotWaxedScene() {
 /** Loads GoUpTheLiftScene*/
 function loadGoUpTheLiftScene() {
   
-  informationtext.textContent = "*Ni börjar gå mot liften. Nu är ni framme vid liften och åker upp i liften. Väl i liften så stannar maskineriet. Ni har suttit i liften i 10 minuter* Vad gör ni?";
+  informationtext.textContent = "Ni börjar gå mot liften. Nu är ni framme vid liften och åker upp i liften. Väl i liften så stannar maskineriet. Ni har suttit i liften i 10 minuter. Vad gör ni?";
   
   button1.textContent = "Hoppar ner";
   button1.onclick = loadGetDownFromLiftScene;
@@ -66,7 +66,7 @@ function loadGoUpTheLiftScene() {
 
 /** Loads GetDownFromLiftScene*/
 function loadGetDownFromLiftScene() {
-  informationtext.textContent = "*Ni landar mjuk i en snöhög, ställer er upp och åker nerför berget.*"
+  informationtext.textContent = "Ni landar mjuk i en snöhög, ställer er upp och åker nerför berget."
 
   button1.textContent = "Fortsätt";
   button1.onclick = loadSnowMonsterScene;
@@ -76,7 +76,7 @@ function loadGetDownFromLiftScene() {
 
 /** Loads LiftStartsMoveForward.*/
 function LoadLiftStartsMoveForward() {
-  informationtext.textContent = "*Liften börjar rulla igen. Väl uppe kliver ni av liften och ska precis bege dig neråt när ett UFO plötsligt dyker upp!! UFOT skjuter ut en ljusstråle och börjar suga upp människor. Strålen fortsätter mot er.* Vad gör ni?"
+  informationtext.textContent = "Liften börjar rulla igen. Väl uppe kliver ni av liften och ska precis bege dig neråt när ett UFO plötsligt dyker upp!! UFOT skjuter ut en ljusstråle och börjar suga upp människor. Strålen fortsätter mot er. Vad gör ni?"
 
   button1.textContent = "Börjar åka utför";
   button1.onclick = loadSnowMonsterScene;
@@ -87,7 +87,7 @@ function LoadLiftStartsMoveForward() {
 
 /** Loads SnowMonsterScene*/
 function loadSnowMonsterScene() {
-  informationtext.textContent = "*På vägen ner dyker plötsligt det lokala snömonstret upp. Han säger att han kommer ta era liv om ni inte svarar rätt på hans fråga* 'Vad kallas en inverterad snurr i slopestyle?'"
+  informationtext.textContent = "På vägen ner dyker plötsligt det lokala snömonstret upp. Han säger att han kommer ta era liv om ni inte svarar rätt på hans fråga. 'Vad kallas en inverterad snurr i slopestyle?'"
 
   button1.textContent = "Cork";
   button1.onclick = LoadGoToAfterskiScene;
@@ -99,7 +99,7 @@ function loadSnowMonsterScene() {
 
 /** Loads InsideSpaceShipScene*/
 function LoadInsideSpaceShipScene() {
-  informationtext.textContent = '*Ni blir uppsugna i UFO:t. Där uppe befinner sig varleser som ser exakt ut som oss förutom att deras huvuden är "alien"-formade. Dom har också snowboards och gestikulerar och visar med kroppsspåk "Hur för man??" Aliensen parkerar UFO:t och alla kliver ut och börjar åka tillsammans nerför. Helt plötsligt utbryter en lavin och en alien fastnar under snön*'
+  informationtext.textContent = 'Ni blir uppsugna i UFO:t. Där uppe befinner sig varleser som ser exakt ut som oss förutom att deras huvuden är "alien"-formade. Dom har också snowboards och gestikulerar och visar med kroppsspåk "Hur för man??" Aliensen parkerar UFO:t och alla kliver ut och börjar åka tillsammans nerför. Helt plötsligt utbryter en lavin och en alien fastnar under snön.'
 
   button1.textContent = "Ni börjar gräva";
   button1.onclick = LoadGoToAfterskiScene;
@@ -110,7 +110,7 @@ function LoadInsideSpaceShipScene() {
 
 /** Loads GoToAfterskiScene.*/
 function LoadGoToAfterskiScene() {
-  informationtext.textContent = "*Ni lyckades. Alla är superglada och vill fira* Hur ska ni fira?"
+  informationtext.textContent = "Ni lyckades. Alla är superglada och vill fira. Hur ska ni fira?"
 
   button1.textContent = "Afterski";
   button1.onclick = loadTheEndScene;
@@ -121,7 +121,7 @@ function LoadGoToAfterskiScene() {
 
 /** Loads SistaÅkText*/
 function loadSistaÅkText() {
-  informationtext.textContent = "Man ska ALDRIG ta ett sista åk"
+  informationtext.textContent = "Man ska ALDRIG ta sista åket."
 
   button1.textContent = "Fortsätt";
   button1.onclick = loadGameOverScene;
@@ -131,7 +131,7 @@ function loadSistaÅkText() {
 
 /** Loads AlienShootYouInHeadScene*/
 function loadAlienShootYouInHeadScene() {
-  informationtext.textContent = "*Alien ser er smita och skjuter alla med sin laserpistol*"
+  informationtext.textContent = "Alien ser er smita och skjuter alla med sin laserpistol."
 
   button1.style.display = "block";
   
