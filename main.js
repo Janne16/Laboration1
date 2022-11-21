@@ -11,6 +11,8 @@ function loadHtmlElements() {
   informationText = document.getElementById('informationtext');
   button1 = document.getElementById('answer-1');
   button2 = document.getElementById('answer-2');
+
+  let hasShowel = false;
 }
 /** loads start scene*/
 function loadStartScene() {
@@ -34,36 +36,26 @@ function loadChooseSnowboardOrSkisScene() {
   informationText.textContent = "Nu ska du får välja snowboard eller skidor";
   
   button1.textContent = "Snowboard";
-  button1.onclick = LoadOnWayToLiftScene;
+  button1.onclick = loadGoUpTheLiftScene;
   
   button2.textContent = "Skidor";
   button2.onclick = loadSkiNotWaxedScene;
 }
 
 function loadSkiNotWaxedScene() {
-  informationtext.textContent = "Attans skidorna är inte vallade ännu, du får ta snowboard istället. *Du börjar gå mot liften*";
+  informationtext.textContent = "Attans skidorna är inte vallade ännu, du får ta snowboard istället.";
   
   button1.textContent = "Fortsätt";
-  button1.onclick = LoadOnWayToLiftScene;
+  button1.onclick = loadGoUpTheLiftScene;
 
   button2.style.display = "none";
 }
 
-function LoadOnWayToLiftScene() {
-  informationtext.textContent = "*Du börjar gå mot liften och ser ett rep och en lavinspade* Vilken plockar du upp?";
-  
-  button1.textContent = "Repet";
-  button1.onclick = loadGoUpTheLiftScene;
-  
-  button2.style.display = "block";
-  button2.textContent = "Spaden"; /*Om man tar spaden ska man inte kunna välja "använd repet". Gör funktion för detta!*/
-  button2.onclick = loadGoUpTheLiftScene;
-}
-
 function loadGoUpTheLiftScene() {
-  informationtext.textContent = "*Nu är du framme vid liften och åker upp i liften. Väl i liften så stannar maskineriet. Du har suttit i liften i 10 minuter* Vad gör du?";
   
-  button1.textContent = "Använder repet och klättrar ner";
+  informationtext.textContent = "*Du börjar gå mot liften. Nu är du framme vid liften och åker upp i liften. Väl i liften så stannar maskineriet. Du har suttit i liften i 10 minuter* Vad gör du?";
+  
+  button1.textContent = "Hoppar ner";
   button1.onclick = loadGetDownFromLiftScene;
   
   button2.textContent = "Sitter kvar";
@@ -71,7 +63,7 @@ function loadGoUpTheLiftScene() {
 }
 
 function loadGetDownFromLiftScene() {
-  informationtext.textContent = "*Du tänker för dig själv vilken tur att jag tog med mig repet och inte spaden och åker nerför berget.*"
+  informationtext.textContent = "*Du landar mjuk i en snöhög, ställer dig upp och åker nerför berget.*"
 
   button1.textContent = "Fortsätt";
   button1.onclick = loadSnowMonsterScene;
@@ -103,18 +95,18 @@ function loadSnowMonsterScene() {
 function LoadInsideSpaceShipScene() {
   informationtext.textContent = '*Du blir uppsugen i UGO:t. Där uppe befinner sig varleser som ser exakt ut som oss förutom att deras huvuden är "alien"-formade. Dom har också snowboards och gestikulerar och visar med kroppsspåk "Hur för man??" Aliensen parkerar UFO:t och alla kliver ut och börjar åka tillsammans nerför. Helt plötsligt utbryter en lavin och en alien fastnar under snön*'
 
-  button1.textContent = "Använd spaden";
+  button1.textContent = "Alla börjar gräva";
   button1.onclick = LoadGoToAfterskiScene;
   
-  button2.textContent = "Gräver för hand";
-  button2.onclick = loadAlienDeadScene;
+  button2.textContent = "Du börjar åka därifrån";
+  button2.onclick = loadAlienShootYouInHeadScene;
 }
 
 function LoadGoToAfterskiScene() {
   informationtext.textContent = "*Ni lyckas gräva fram alien. Alla är superglada och vill fira* Hur ska ni fira?"
 
   button1.textContent = "Afterski";
-  button1.onclick = LoadGoToAfterskiScene;
+  button1.onclick = loadTheEndScene;
   
   button2.textContent = "Tar ett sista åk";
   button2.onclick = loadSistaÅkText;
@@ -129,8 +121,8 @@ function loadSistaÅkText() {
   button2.style.display = "none"
 }
 
-function loadAlienDeadScene() {
-  informationtext.textContent = "*Alien dör. De andra aliensen blir förtvivlade och förbannade och skjuter ihjäl alla med alienpistol*"
+function loadAlienShootYouInHeadScene() {
+  informationtext.textContent = "*Alien ser dig smita och skjuter dig med sin laserpistol*"
 
   button1.style.display = "block";
   
@@ -145,5 +137,9 @@ function loadGameOverScene() {
   button1.onclick = loadStartScene;
 
   button2.style.display = "none";
+}
+
+function loadTheEndScene() {
+  informationtext.textContent = "Väl på afterskin har alla så kul att äventyret tar slut. The End!" 
 }
 
